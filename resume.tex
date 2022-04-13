@@ -1,0 +1,206 @@
+% Michael Fadem Software Engineering/Computer Science Resume
+%-------------------------
+% Credit to the original author: Sourabh Bajaj
+% License : MIT
+% Current Revision 3.2022
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.475in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeAwardItem}[3]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textit{\small #2} & \textit{\small #3} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingPromo}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+%%%%%%  RESUME START  %%%%%%
+
+\begin{document}
+
+%----------HEADER-----------------
+\begin{center}
+  \textbf{\huge Michael Fadem}
+\end{center}
+\begin{center}
+  Albuquerque, NM \(|\) \href{mailto:michaelfadem@outlook.com}{michaelfadem@outlook.com} \(|\) 505-310-5299 \(|\) \href{https://www.linkedin.com/in/mfadem/}{https://www.linkedin.com/in/mfadem/}
+\end{center}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingPromo
+      {Sandia National Laboratories}{Albuquerque, NM}
+      {R\&D Computer Scientist}{Jan 2022 - Present}
+      {Software Systems Engineer}{Oct 2019 - Jan 2022}
+      \resumeItemListStart
+        \resumeItem{Tracktable}
+          {Engineering lead and maintainer for the Sandia open source project and 2020 R\&D 100 award winner Tracktable, \url{https://tracktable.sandia.gov/}, which provides trajectory analytics and rendering capabilities}
+        \resumeItem{Data Visualization}
+          {Developer for a generalized data visualization tool utilizing NASA's OpenMCT framework and web technologies}
+        \resumeItem{Modeling and Simulation}
+          {Primary software integration engineer for a critical national modeling and simulation program, integrating four large scale Sandia software systems and successfully producing results in less than 3 months}
+        \resumeItem{Satellite Ground System Enhancement}
+          {Developed software, testing suites and super resolution image processing algorithms for a major satellite ground system enhancement program}
+        \resumeItem{Next Generation Ground System}
+          {Developed and deployed rapidly prototyped software for next generation ground systems that was concurrently developed by internal and external teams leveraging state of the art algorithms and GPU processing}
+        \resumeItem{Data Analytics}
+          {Performed large scale data analysis to reinforce and verify algorithm correctness while satisfying customer requirements and requests}
+        \resumeItem{Developer Workflow}
+          {Developed internal bots and scripts to assist developer workflows and debug environments including a Git blame TODO bot which determines the original code author and pings them automatically in a Mattermost channel}
+        \resumeItem{Mentoring}
+          {Onboarded and mentored multiple new software engineers and computer scientists on project technical details and Sandia culture to reduce project and Sandia spin up time}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Honeywell Aerospace}{Albuquerque, NM}
+      {Software Engineer}{Jun 2017 - Oct 2019}
+      \resumeItemListStart
+        \resumeItem{V-22 Main Flight Display}
+          {Developed and deployed frontend and backend embedded software written for the V-22 Osprey's main flight display and keyboards}
+        \resumeItem{Software Performance}
+          {Redesigned and optimized critical flight display graphics interface improving indexing runtime from O(n) to O(1) utilizing a lookup table}
+        \resumeItem{Software Lab Upgrade}
+          {Software focal for the V-22 Osprey software integration lab upgrade successfully adding fully remote software testing, power control, and hardware loading capabilities}
+        \resumeItem{Automation}
+          {Automated the software build process for the V-22 Osprey main flight display reducing overall build time and complexity by over 50\%}
+        \resumeItem{Customer Interaction}
+          {Provided technical analysis and recommendations to external customer technical requests and issues}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science; Specialization: Interactive Intelligence}{Aug. 2021 -- Dec. 2024}
+    \resumeSubheading
+      {New Mexico State University}{Las Cruces, NM}
+      {Bachelor of Science in Computer Science}{Aug. 2013 -- May. 2017}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{Computer Science Post Bot 4096}
+%       {A twitter bot that generates and posts nonscensical computer science related images}
+%     \resumeSubItem{Quote Modification Bot}
+%       {A twitter bot that replaces a random noun from a provided quote}
+%   \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{Technologies \& Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming Languages}{: Python (5+ years exp.), C/C++ (3+ years exp.) }
+   }
+   \item{
+    \textbf{Domains}{: Open Source Software, Geospatial/Trajectory Analytics, Image Processing, Remote Sensing, Object Detection, Graphics}
+   }
+   \item{
+    \textbf{Technologies}{: AWS, Azure Dev Ops, Boost, CMake, CTest, Docker, Folium, Git, Github, Gitlab, Gitlab CI/CD, Jenkins, Kubernetes, Numpy, OpenCV, Pytest, RESTful APIs, Sphinx}
+   }
+   \item{
+    \textbf{Software Development}{: Agile, Continuous Integration/Continuous Development, Full Software Development Life Cycle, Kanban, SAFe, Scrum, Technical Documentation, Waterfall}
+   }
+   \item{
+    \textbf{Software Packaging}{: Anaconda, PyPi}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------RECOGNITION & AWARDS -----------------
+% \section{Recognition \& Awards}
+%   \resumeSubHeadingListStart
+%     \resumeAwardItem{Spot Award (x2)}{Sandia National Laboratories}{2021}
+%     \resumeAwardItem{Silver Award}{Honeywell Aerospace}{2019}
+%     \resumeAwardItem{Gold Award}{Honeywell Aerospace}{2018}
+%   \resumeSubHeadingListEnd
+
+%----------FOOTER-----------------
+% \begin{center}
+% \textit{\textbf {Security Clearance Information Available Upon Request}}
+% \end{center}
+
+%-------------------------------------------
+\end{document}
+
+%%%%%%  RESUME END  %%%%%%

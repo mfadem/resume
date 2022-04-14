@@ -1,2 +1,2 @@
 # resume
-My recent professional and academic accomplishment in one convenient place!
+My recent professional and academic accomplishments in one convenient place!

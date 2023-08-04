@@ -14,10 +14,19 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{mathtools}
 \usepackage{amsmath}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+  }
 
 
 \pagestyle{fancy}
@@ -96,7 +105,7 @@
   \textbf{\huge Michael Fadem}
 \end{center}
 \begin{center}
-  Albuquerque, NM \(|\) \href{mailto:michaelfadem@outlook.com}{michaelfadem@outlook.com} \(|\) 505-310-5299 \(|\) \href{https://www.linkedin.com/in/mfadem/}{https://www.linkedin.com/in/mfadem/}
+  Seattle, WA \(|\) \href{mailto:michaelfadem@outlook.com}{michaelfadem@outlook.com} \(|\) 505-310-5299 \(|\) \href{https://www.linkedin.com/in/mfadem/}{linkedin.com/in/mfadem/}
 \end{center}
 
 
@@ -104,47 +113,60 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+  \resumeSubheading
+  {BlackSky}{Seattle, WA - Remote}
+  {Senior Software Engineer}{Aug 2022 - Present}
+  \resumeItemListStart
+    \resumeItem{Analytics Integration}
+      {Senior Software Engineer on the Analytics Integration team responsible for developing and supporting diverse Python-based microservices that empower BlackSky's AI analytic capabilities, supporting multi-million dollar commercial and government contracts}
+    \resumeItem{Software Architecture}
+      {Responsible for architecting and designing multiple microservices that are resulting in enhanced AI analytic capabilities, expanded analytic offerings, and improved user experiences}
+    \resumeItem{AI/ML Support}
+      {Closely collaborating with BlackSky's AI/ML team to seamlessly integrate cutting-edge AI-based imagery analytics, enhancing object detection capabilities, and contributing to the AI analytic market expansion}
+    \resumeItem{Platform Support}
+      {Assisting other Platform teams to deliver bug fixes, database solutions and code enhancements to Java-based microservices to refine the core capabilities of the BlackSky Spectra platform}
+  \resumeItemListEnd
+
     \resumeSubheadingPromo
-      {Sandia National Laboratories}{Albuquerque, NM}
-      {R\&D Computer Scientist}{Jan 2022 -- Present}
-      {Software Systems Engineer}{Oct 2019 -- Jan 2022}
+      {Sandia National Laboratories}{Albuquerque, NM - Hybrid}
+      {R\&D Computer Scientist}{Jan 2022 - Aug 2022}
+      {Software Systems Engineer}{Oct 2019 - Jan 2022}
       \resumeItemListStart
-        \resumeItem{Tracktable}
-          {Engineering lead and maintainer for the Sandia open source project and 2020 R\&D 100 award winner Tracktable, \url{https://tracktable.sandia.gov/}, providing trajectory analytics and rendering capabilities through a Python library which leverages a C++ backend for performance}
+        \resumeItem{\href{https://tracktable.sandia.gov/}{Tracktable}}
+          {Engineering lead and maintainer for the Sandia open-source project Tracktable, a 2020 R\&D 100 award winner, which enables trajectory analytics and rendering through a Python library with a high-performance C++ backend}
           \resumeItemListStart
             \resumeItem{Responsibilities}{Feature design/implementation/review/maintenance, bug fixes, release planning, backlog grooming, documentation, package management and CI/CD management}
           \resumeItemListEnd
         \resumeItem{Modeling and Simulation}
-          {Primary software integration engineer for a critical national level modeling and simulation program, integrating four large scale Sandia software systems together and successfully producing simulation results in less than 3 months}
+          {Lead software engineer for a critical high-visibility modeling and simulation program, integrating four large-scale Sandia software systems in less than 3 months, yielding successful simulation results}
         \resumeItem{Satellite Ground System Enhancement}
-          {Developed C++ software and testing suites along with super resolution image processing algorithms leveraging OpenCV in an AWS environment for a major satellite ground system enhancement program}
+          {Developed robust C++ software, comprehensive testing suites and advanced image processing algorithms in an efficient and scalable AWS Kubernetes deployment for a major satellite ground system enhancement program}
         \resumeItem{Next Generation Ground System}
-          {Developed and deployed rapidly prototyped software for next generation ground systems that was concurrently developed by internal and external teams leveraging state-of-the-art algorithms and Python-based GPU processing}
-        \resumeItem{Data Visualization}
-          {Developer for a generalized data visualization tool utilizing NASA's OpenMCT framework and web technologies such as Javascript, Webpack and Node.js}
-        \resumeItem{Data Analytics}
-          {Performed large scale data analysis and visualization to reinforce and verify algorithm correctness while satisfying customer requirements and requests}
-        \resumeItem{Developer Workflow}
-          {Developed internal bots and scripts to assist developer workflows and debug environments including a Git blame TODO bot which finds TODOs within a codebase and alerts the original author automatically in Mattermost}
-        \resumeItem{Mentoring}
-          {Mentored multiple new software engineers and computer scientists on project technical details and Sandia culture to reduce project and Sandia spin up time}
-
+          {Engineered and deployed rapidly prototyped software for a next generation ground system leveraging state-of-the-art algorithms and Python-based GPU processing}
+        \resumeItem{\href{https://github.com/sandialabs/generic-data-display}{Data Visualization}}
+          {Developer for Generic Data Display, a generic data visualization tool utilizing NASA's OpenMCT framework and web technologies such as Javascript, Webpack and Node.js}
+        \resumeItem{\href{https://github.com/sandialabs/ISMAGS-in-Python}{Subgraph Isomorphism}}
+          {Converted the Java-based implementation of the \href{https://github.com/biointec/ismags}{Index-Based Subgraph Matching Algorithm with General Symmetries} (ISMAGS) algorithm to a high-performance Python-based implementation}
+        % \resumeItem{Data Analytics}
+        %   {Performed large scale data analysis and visualization to reinforce and verify algorithm correctness while satisfying customer requirements and requests}
+        % \resumeItem{Mentoring}
+        %   {Mentored multiple new software engineers and computer scientists on project technical details and Sandia culture to reduce project and Sandia spin up time}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Honeywell Aerospace}{Albuquerque, NM}
-      {Software Engineer}{Jun 2017 -- Oct 2019}
+      {Honeywell Aerospace}{Albuquerque, NM - Onsite}
+      {Software Engineer}{Jun 2017 - Oct 2019}
       \resumeItemListStart
         \resumeItem{V-22 Main Flight Display}
-          {Developed and deployed frontend and backend embedded software, written in C, for the V-22 Osprey's main flight display and keyboards}
+          {Developed and deployed C-based frontend and backend embedded software for the V-22 Osprey's main flight display and keyboards}
         \resumeItem{Software Performance}
-          {Redesigned and optimized critical flight display graphics interface improving indexing runtime from O(n) to O(1) utilizing a lookup table}
+          {Redesigned and optimized critical flight display graphics interface, achieving an indexing runtime improvement from O(n) to O(1) by implementing a lookup table data structure}
         \resumeItem{Software Lab Upgrade}
           {Software focal for the V-22 Osprey software integration lab upgrade successfully adding fully remote software testing, power control, and hardware loading capabilities}
         \resumeItem{Automation}
-          {Automated the software build process for the V-22 Osprey main flight display utilizing virtual machines and Python scripts reducing overall build time and complexity by over 50\%}
-        \resumeItem{Customer Interaction}
-          {Provided technical analysis and recommendations to external customer technical requests and software issues}
+          {Automated the software build process for the V-22 Osprey main flight display using virtual machines and Python scripts, resulting in over a 50\% reduction in build time and complexity}
+        % \resumeItem{Customer Interaction}
+        %   {Provided technical analysis and recommendations to external customer technical requests and software issues}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -152,12 +174,12 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; Specialization: Interactive Intelligence}{Aug. 2021 -- Dec. 2024}
+    % \resumeSubheading
+    %   {Georgia Institute of Technology}{Atlanta, GA}
+    %   {Master of Science in Computer Science}{Aug. 2021 - Dec. 2024}
     \resumeSubheading
       {New Mexico State University}{Las Cruces, NM}
-      {Bachelor of Science in Computer Science}{Aug. 2013 -- May. 2017}
+      {Bachelor of Science in Computer Science}{Aug. 2013 - May. 2017}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
@@ -173,21 +195,72 @@
 %--------SKILLS------------
 \section{Technologies \& Skills}
  \resumeSubHeadingListStart
-   \item{
-     \textbf{Programming Languages}{: Python (5+ years exp.), C/C++ (3.5+ years exp.), Various Other Languages ($<$6 months exp.): Java, C\#, JavaScript, etc.  }
+   \item\small{
+     \textbf{Programming Languages}{:
+      Python (6+ years exp.),
+      C/C++ (3.5+ years exp.),
+      Java (1+ years exp.)
+     }
    }
-   \item{
-    \textbf{Domains}{: Backend, Dev Ops,  Open Source Software, Geospatial/Trajectory Analytics, Graphics, Image Processing, Object Detection, Remote Sensing}
+   \item\small{
+    \textbf{Domains}{:
+      AI/ML,
+      Backend Development,
+      Cloud Computing,
+      DevOps,
+      Geospatial Intelligence,
+      Geospatial/Trajectory Analytics,
+      Image Processing,
+      Object Detection,
+      Remote Sensing,
+      Software (Commercial, Geospatial, Open Source, Platform, Research \& Development)
+    }
    }
-   \item{
-    \textbf{Technologies}{: APIs, AWS, Azure Dev Ops, Boost, CMake, CTest, Docker, Git, Github, Gitlab, Gitlab CI/CD, Jenkins, Kubernetes, Linux, MacOS, MongoDB($<$6 months exp), Numpy, OpenCV, Pytest, Sphinx, Windows}
+   \item\small{
+    \textbf{Technologies}{:
+      AWS (Batch, Cloudformation, ECS (Elastic Container Service), EC2 (Elastic Compute Cloud), Lambda, Step Functions),
+      Azure DevOps,
+      Boost,
+      CMake,
+      CTest,
+      Docker,
+      GDAL,
+      Git,
+      Github,
+      GitKraken,
+      Gitlab,
+      Gitlab CI/CD,
+      Jenkins,
+      Jira,
+      Kubernetes,
+      Numpy,
+      OpenCV,
+      PostgreSQL,
+      Pylint,
+      Pytest,
+      Ruff,
+      Sphinx
+    }
    }
-   \item{
-    \textbf{Software Development}{: Agile, Code Reviews, Continuous Integration/Continuous Development, Documentation, Full Software Development Life Cycle, Integration Testing, Kanban, SAFe, Scrum, Unit Testing},
+   \item\small{
+    \textbf{Software Development}{:
+      Agile,
+      APIs,
+      CI/CD,
+      Code Reviews,
+      Customer Facing Documentation,
+      End-to-End Testing,
+      Full SDLC,
+      Kanban,
+      Microservices,
+      Performance Optimization,
+      Requirement Decomposition,
+      Scrum
+    }
    }
-   \item{
-    \textbf{Software Packaging}{: Anaconda, PyPi}
-   }
+  %  \item{
+  %   \textbf{Software Packaging}{: Anaconda, PyPi}
+  %  }
  \resumeSubHeadingListEnd
 
 %-----------RECOGNITION & AWARDS -----------------
@@ -200,7 +273,7 @@
 
 %----------FOOTER-----------------
 % \begin{center}
-% \textit{\textbf {Security Clearance Information Available Upon Request}}
+% \textit{\textbf {Blah Blah Blah}}
 % \end{center}
 
 %-------------------------------------------

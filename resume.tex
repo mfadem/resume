@@ -113,22 +113,39 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-  \resumeSubheading
+  \resumeSubheadingPromo
   {BlackSky}{Seattle, WA - Remote}
-  {Senior Software Engineer}{Aug 2022 - Present}
+  {Staff Software Engineer}{Apr 2025 - Present}
+  {Senior Software Engineer}{Aug 2022 - Apr 2025}
   \resumeItemListStart
-    \resumeItem{Platform Analytics}
-      {Senior Software Engineer on the Platform Analytics team, developing and supporting Python-based microservices enhancing BlackSky's AI analytics for multi-million dollar commercial and government contracts}
-    \resumeItem{AI/ML Models}
-      {Closely partner with BlackSky's AI/ML team to seamlessly productionize cutting-edge AI-based imagery derived analytics to enhance BlackSky's AI analytic capabilities and expand analytic offerings}
+    \resumeItem{ML Operations}
+      {Staff Software Engineer developing and supporting Python and Golang microservices, inference pipelines, and infrastructure powering BlackSky's AI analytics for multi-million-dollar government contracts}
+    \resumeItem{AI Inference Pipelines}
+      {Architected and developed low-latency, production-grade inference pipelines using Python, Golang, Kubernetes, and AWS EventBridge, enabling AI inference across all BlackSky satellite imagery products and constellations}
+    \resumeItemListStart
+      \resumeItem{Throughput}
+        {Process hundreds of high-resolution satellite images concurrently with end-to-end runtimes within 5-10 minutes using autoscaling Kubernetes worker pools and EC2 backend resources}
+      \resumeItem{Scaling}
+        {Implemented priority-based processing tiers and pipeline worker fan-in/fan-out multiprocessing logic to ensure SLA-aligned throughput and latency}
+    \resumeItemListEnd
+    \resumeItem{AI/ML Model Productization}
+      {Collaborating with BlackSky's AI/ML Computer Vision team to productize and deploy cutting-edge, imagery-derived AI analytics and expand BlackSky's analytic offerings}
+    \resumeItem{Analytic Integration}
+        {}
+    \resumeItemListStart
+      \resumeItem{Spectra Platform}
+        {Working closely with BlackSky's Ground Services \& Apps (UI/UX) teams to integrate AI analytics and inference pipelines within BlackSky's Spectra Platform}
+      \resumeItem{Third Party Platform}
+        {Developed an analytic coordination service, API and interface schema that seamlessly integrates BlackSky's analytic ordering and product management systems with third-party AI analytic providers}
+    \resumeItemListEnd
     \resumeItem{Python SDK}
-      {Architected and engineered a Python SDK to facilitate rapid application development while minimizing redundant boilerplate code across all Python teams at BlackSky}
+      {Lead the development of a modular monolith Python SDK to accelerate application development and minimize redundant boilerplate code across all teams and services using Python at BlackSky}
     % \resumeItem{Service Architecture}
     %   {Responsible for architecting and developing solutions that enhance AI analytic capabilities, expand analytic offerings, and improve the functionality of BlackSky's Spectra platform}
-    \resumeItem{DOE Energy I-Corps}
-      {Mentored a team of researchers from Sandia National Labs through the DOE Energy I-Corps program, providing industry expertise and strategic guidance on the commercialization of lab-developed technologies}
-    \resumeItem{Cross-Team Development}
-      {Assist other Platform teams to deliver bug fixes, database solutions and code enhancements to Java-based microservices to refine the core capabilities of the BlackSky Spectra platform}
+    % \resumeItem{DOE Energy I-Corps}
+    %   {Mentored a team of researchers from Sandia National Labs through the DOE Energy I-Corps program, providing industry expertise and strategic guidance on the commercialization of lab-developed technologies}
+    % \resumeItem{Cross-Team Development}
+    %   {Assist other Platform teams to deliver bug fixes, database solutions and code enhancements to Java-based microservices to refine the core capabilities of the BlackSky Spectra platform}
   \resumeItemListEnd
 
   \resumeSubheadingPromo
@@ -145,12 +162,12 @@
         {Lead software engineer for a critical high-visibility modeling and simulation program, integrating four large-scale Sandia software systems in less than 3 months, yielding successful simulation results}
       \resumeItem{Satellite Ground System Enhancement}
         {Developed robust C++ software, comprehensive testing suites and advanced image processing algorithms in an efficient and scalable AWS Kubernetes deployment for a major satellite ground system enhancement program}
-      \resumeItem{Next Generation Ground System}
-        {Engineered and deployed rapidly prototyped software for a next generation ground system leveraging state-of-the-art algorithms and Python-based GPU processing}
-      \resumeItem{\href{https://github.com/sandialabs/generic-data-display}{Data Visualization}}
-        {Developer for Generic Data Display, a generic data visualization tool utilizing NASA's OpenMCT framework and web technologies such as Javascript, Webpack and Node.js}
-      \resumeItem{\href{https://github.com/sandialabs/ISMAGS-in-Python}{Subgraph Isomorphism}}
-        {Converted the Java-based implementation of the \href{https://github.com/biointec/ismags}{Index-Based Subgraph Matching Algorithm with General Symmetries} (ISMAGS) algorithm to a high-performance Python-based implementation}
+      % \resumeItem{Next Generation Ground System}
+      %   {Engineered and deployed rapidly prototyped software for a next generation ground system leveraging state-of-the-art algorithms and Python-based GPU processing}
+      % \resumeItem{\href{https://github.com/sandialabs/generic-data-display}{Data Visualization}}
+      %   {Developer for Generic Data Display, a generic data visualization tool utilizing NASA's OpenMCT framework and web technologies such as Javascript, Webpack and Node.js}
+      % \resumeItem{\href{https://github.com/sandialabs/ISMAGS-in-Python}{Subgraph Isomorphism}}
+      %   {Converted the Java-based implementation of the \href{https://github.com/biointec/ismags}{Index-Based Subgraph Matching Algorithm with General Symmetries} (ISMAGS) algorithm to a high-performance Python-based implementation}
       % \resumeItem{Data Analytics}
       %   {Performed large scale data analysis and visualization to reinforce and verify algorithm correctness while satisfying customer requirements and requests}
       % \resumeItem{Mentoring}
@@ -201,14 +218,16 @@
  \resumeSubHeadingListStart
    \item\small{
      \textbf{Programming Languages}{:
-      Python (7+ years exp.),
+      Python (7.5+ years exp.),
       C/C++ (3.5+ years exp.),
-      Java (1+ years exp.)
+      Java (2.5+ years exp.),
+      Golang (1+ years exp.)
      }
    }
    \item\small{
     \textbf{Domains}{:
       AI/ML,
+      AI/ML Integration,
       Backend Development,
       Cloud Computing,
       DevOps,
@@ -222,7 +241,9 @@
    }
    \item\small{
     \textbf{Technologies}{:
-      AWS (Batch, Cloudformation, ECS (Elastic Container Service), EC2 (Elastic Compute Cloud), EKS (Elastic Kubernetes Service), Lambda, Step Functions),
+      % AWS (Batch, Cloudformation, ECS (Elastic Container Service), EC2 (Elastic Compute Cloud), EKS (Elastic Kubernetes Service), Lambda, Step Functions),
+      ArgoCD,
+      AWS (Batch, Cloudformation, ECS, EC2, EKS, EventBridge, Lambda, Step Functions),
       Azure DevOps,
       Boost,
       CMake,
@@ -233,9 +254,10 @@
       Git,
       Github,
       Github Actions,
-      GitKraken,
+      % GitKraken,
       Gitlab,
       Gitlab CI/CD,
+      Grafana
       % Jenkins,
       Jira,
       Kubernetes,
@@ -244,6 +266,7 @@
       PostgreSQL,
       % Pylint,
       Pytest,
+      Rasterio,
       Ruff,
       % Sphinx
     }
@@ -262,8 +285,7 @@
       Monoliths,
       Performance Optimization,
       Requirement Decomposition,
-      Scrum,
-      Services
+      Scrum
     }
    }
   %  \item{

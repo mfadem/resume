@@ -57,7 +57,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-1.5pt}}
   }
 }
 
@@ -118,32 +118,36 @@
   {Staff Software Engineer}{Apr 2025 - Present}
   {Senior Software Engineer}{Aug 2022 - Apr 2025}
   \resumeItemListStart
-    \resumeItem{ML Operations}
-      {Staff Software Engineer developing and supporting Python and Golang microservices, inference pipelines, and infrastructure powering BlackSky's AI analytics for multi-million-dollar government contracts}
+    % \resumeItem{ML Operations}
+    %   {Staff Software Engineer developing and supporting Python and Golang microservices, inference pipelines, and infrastructure powering BlackSky's AI analytics for multi-million-dollar government contracts}
     \resumeItem{AI Inference Pipelines}
-      {Architected and developed low-latency, production-grade inference pipelines using Python, Golang, Kubernetes, and AWS EventBridge, enabling AI inference across all BlackSky satellite imagery products and constellations}
+      {Architecting and developing low-latency, production-grade inference pipelines using Python, Golang, Kubernetes, and AWS EventBridge, enabling AI inference across all BlackSky satellite imagery products and constellations}
     \resumeItemListStart
       \resumeItem{Throughput}
-        {Process hundreds of high-resolution satellite images concurrently with end-to-end runtimes within 5-10 minutes using autoscaling Kubernetes worker pools and EC2 backend resources}
+        {Processing hundreds of high-resolution satellite images concurrently with end-to-end runtimes within 5-10 minutes using autoscaling Kubernetes worker pools and EC2 backend resources}
       \resumeItem{Scaling}
         {Implemented priority-based processing tiers and pipeline worker fan-in/fan-out multiprocessing logic to ensure SLA-aligned throughput and latency}
+      \resumeItem{Observability}
+        {Leverages PostgreSQL to capture worker level telemetry, Grafana for real time latency and load monitoring and Slack alerts for pipeline errors}
     \resumeItemListEnd
-    \resumeItem{AI/ML Model Productization}
-      {Collaborating with BlackSky's AI/ML Computer Vision team to productize and deploy cutting-edge, imagery-derived AI analytics and expand BlackSky's analytic offerings}
     \resumeItem{Analytic Integration}
-        {}
-    \resumeItemListStart
-      \resumeItem{Spectra Platform}
-        {Working closely with BlackSky's Ground Services \& Apps (UI/UX) teams to integrate AI analytics and inference pipelines within BlackSky's Spectra Platform}
-      \resumeItem{Third Party Platform}
-        {Developed an analytic coordination service, API and interface schema that seamlessly integrates BlackSky's analytic ordering and product management systems with third-party AI analytic providers}
-    \resumeItemListEnd
+        {Serve as the primary technical PoC interfacing with Product, Platform and UI/UX teams to integrate inference pipelines directly into BlackSky's Spectra Platform along with defining customer facing terminology and analytic visualizations}
+    \resumeItem{Analytic Coordination}
+        {Lead developer for a centralized Analytic Coordination service adopted as the primary gateway for all AI/ML analytics with service-level guarantees of data lineage and correctness to eliminate downstream inference faults}
+    % \resumeItemListStart
+    %   \resumeItem{Spectra Platform}
+    %     {Working closely with BlackSky's Ground Services \& Apps (UI/UX) teams to integrate AI analytics and inference pipelines within BlackSky's Spectra Platform}
+    %   \resumeItem{Third Party Platform}
+    %     {Developed an analytic coordination service, API and interface schema that seamlessly integrates BlackSky's analytic ordering and product management systems with third-party AI analytic providers}
+    % \resumeItemListEnd
+    \resumeItem{Platform Engineering}
+      {Spearheaded the design and deployment of mission-critical microservices powering AI/ML model orchestration, automated imagery ordering, and end-to-end customer operations for BlackSky's satellite constellation}
     \resumeItem{Python SDK}
-      {Lead the development of a modular monolith Python SDK to accelerate application development and minimize redundant boilerplate code across all teams and services using Python at BlackSky}
+      {Architected and launched a foundational Python SDK adopted by 20+ production services, eliminating hundreds of lines of redundant boilerplate per service; standardized mission-critical patterns for CI/CD pipelines, observability, and AWS integrations, accelerating day-zero development velocity for all subsequent Python services}
     % \resumeItem{Service Architecture}
     %   {Responsible for architecting and developing solutions that enhance AI analytic capabilities, expand analytic offerings, and improve the functionality of BlackSky's Spectra platform}
-    % \resumeItem{DOE Energy I-Corps}
-    %   {Mentored a team of researchers from Sandia National Labs through the DOE Energy I-Corps program, providing industry expertise and strategic guidance on the commercialization of lab-developed technologies}
+    \resumeItem{DOE Energy I-Corps}
+      {Advised and mentored a team of researchers from Sandia National Labs through the DOE Energy I-Corps program, providing industry expertise and strategic guidance on the commercialization of lab-developed technologies}
     % \resumeItem{Cross-Team Development}
     %   {Assist other Platform teams to deliver bug fixes, database solutions and code enhancements to Java-based microservices to refine the core capabilities of the BlackSky Spectra platform}
   \resumeItemListEnd
@@ -180,12 +184,12 @@
       \resumeItemListStart
         \resumeItem{V-22 Main Flight Display}
           {Developed and deployed C-based frontend and backend software for the V-22 Osprey's main flight display and keyboards}
-        \resumeItem{Software Performance}
-          {Redesigned and optimized critical flight display graphics interface, achieving an indexing runtime improvement from O(n) to O(1) by implementing a lookup table data structure}
+        % \resumeItem{Software Performance}
+        %   {Redesigned and optimized critical flight display graphics interface, achieving an indexing runtime improvement from O(n) to O(1) by implementing a lookup table data structure}
         % \resumeItem{Software Lab Upgrade}
         %   {Software focal for the V-22 Osprey software integration lab upgrade successfully adding fully remote software testing, power control, and hardware loading capabilities}
-        \resumeItem{Automation}
-          {Automated the software build process for the V-22 Osprey main flight display using virtual machines and Python scripts, resulting in over a 50\% reduction in build time and complexity}
+        % \resumeItem{Automation}
+        %   {Automated the software build process for the V-22 Osprey main flight display using virtual machines and Python scripts, resulting in over a 50\% reduction in build time and complexity}
         % \resumeItem{Customer Interaction}
         %   {Provided technical analysis and recommendations to external customer technical requests and software issues}
       \resumeItemListEnd
@@ -217,77 +221,124 @@
 \section{Technologies \& Skills}
  \resumeSubHeadingListStart
    \item\small{
-     \textbf{Programming Languages}{:
-      Python (7.5+ years exp.),
-      C/C++ (3.5+ years exp.),
-      Java (2.5+ years exp.),
-      Golang (1+ years exp.)
+     \textbf{AI/ML Engineering}{:
+      Asynchronous Inference Workflows,
+      Data Serialization, % This would relate to AC, designing the contracts (Protobuf, JSON Schema, Pydantic) that allow the system to scale
+      Distributed Processing, % Fan-in/fan out parallel/concurrent processing
+      Feature Transformation
+      ML Inference Orchestration,
+      Model Deployment Pipelines,
      }
    }
    \item\small{
-    \textbf{Domains}{:
-      AI/ML,
-      AI/ML Integration,
-      Backend Development,
-      Cloud Computing,
-      DevOps,
-      Geospatial Intelligence,
-      Geospatial/Trajectory Analytics,
-      Image Processing,
-      Object Detection,
-      Remote Sensing,
-      Software (Commercial, Geospatial, Open Source, Platform, Research \& Development)
-    }
+     \textbf{Software Architecture}{:
+      API Design,
+      Data Lineage \& Correctness,
+      Event-Driven Architecture,
+      Microservices,
+      Modular Monoliths,
+      Object-Oriented Design (OOD),
+      Observability,
+      Requirement Decomposition
+     }
    }
    \item\small{
-    \textbf{Technologies}{:
-      % AWS (Batch, Cloudformation, ECS (Elastic Container Service), EC2 (Elastic Compute Cloud), EKS (Elastic Kubernetes Service), Lambda, Step Functions),
+     \textbf{Engineering Excellence}{:
+      CI/CD Automation,
+      Code Review
+      Design Patterns,
+      Mentorship,
+      SDK Development,
+      Standarization,
+     }
+   }
+   \item\small{
+     \textbf{Programming Languages}{:
+      Python (9+ years exp.),
+      C/C++ (3.5+ years exp.),
+      Java (2.5+ years exp.),
+      Golang (1.5+ years exp.)
+     }
+   }
+   \item\small{
+     \textbf{Technologies}{:
       ArgoCD,
-      AWS (Batch, Cloudformation, ECS, EC2, EKS, EventBridge, Lambda, Step Functions),
-      Azure DevOps,
-      Boost,
-      CMake,
-      Confluence,
-      CTest,
+      AWS (Batch, ECS, EC2, EKS, EventBridge, Lambda, SNS, SQS, Step Functions),
       Docker,
       GDAL,
-      Git,
-      Github,
-      Github Actions,
-      % GitKraken,
-      Gitlab,
-      Gitlab CI/CD,
-      Grafana
-      % Jenkins,
-      Jira,
       Kubernetes,
       Numpy,
-      OpenCV,
       PostgreSQL,
-      % Pylint,
       Pytest,
       Rasterio,
-      Ruff,
-      % Sphinx
-    }
+      Redis,
+      Ruff
+     }
    }
-   \item\small{
-    \textbf{Software Development}{:
-      Agile,
-      APIs,
-      CI/CD,
-      Code Reviews,
-      Customer Facing Documentation,
-      End-to-End Testing,
-      Full SDLC,
-      Kanban,
-      Microservices,
-      Monoliths,
-      Performance Optimization,
-      Requirement Decomposition,
-      Scrum
-    }
-   }
+  %  \item\small{
+  %   \textbf{Domains}{:
+  %     AI/ML,
+  %     Backend Development,
+  %     Cloud Computing,
+  %     % DevOps,
+  %     Geospatial Intelligence,
+  %     Geospatial/Trajectory Analytics,
+  %     Image Processing,
+  %     ML Operations,
+  %     Object Detection,
+  %     Remote Sensing,
+  %     Software (Commercial, Geospatial, Open Source, Platform, Research \& Development)
+  %   }
+  %  }
+  %  \item\small{
+  %   \textbf{Technologies}{:
+  %     % AWS (Batch, Cloudformation, ECS (Elastic Container Service), EC2 (Elastic Compute Cloud), EKS (Elastic Kubernetes Service), Lambda, Step Functions),
+  %     ArgoCD,
+  %     AWS (Batch, ECS, EC2, EKS, EventBridge, Lambda, SNS, SQS, Step Functions),
+  %     % Azure DevOps,
+  %     % Boost,
+  %     CMake,
+  %     Confluence,
+  %     CTest,
+  %     Docker,
+  %     GDAL,
+  %     Git,
+  %     Github,
+  %     Github Actions,
+  %     % GitKraken,
+  %     Gitlab,
+  %     Gitlab CI/CD,
+  %     Grafana,
+  %     % Jenkins,
+  %     Jira,
+  %     Kubernetes,
+  %     Numpy,
+  %     % OpenCV,
+  %     PostgreSQL,
+  %     % Pylint,
+  %     Pytest,
+  %     Rasterio,
+  %     Ruff
+  %     % Sphinx
+  %   }
+  %  }
+  %  \item\small{
+  %   \textbf{Software Development}{:
+  %     Agile,
+  %     APIs,
+  %     CI/CD,
+  %     Code Reviews,
+  %     Customer Facing Documentation,
+  %     End-to-End Testing,
+  %     Full SDLC,
+  %     Kanban,
+  %     Microservices,
+  %     Monoliths,
+  %     Performance Optimization,
+  %     Requirement Decomposition,
+  %     Scrum
+  %   }
+  %  }
   %  \item{
   %   \textbf{Software Packaging}{: Anaconda, PyPi}
   %  }
